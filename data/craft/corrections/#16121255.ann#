@@ -1,0 +1,51 @@
+T6.sandy	Entity 206 217	vasopressin
+T7.sandy	KeyEntity 239 269	nephrogenic diabetes insipidus
+T12.sandy	Entity 545 578	ethylnitrosourea-mutagenized mice
+T13.sandy	KeyEntity 650 653	NDI
+T14.sandy	KeyEntity 663 677	F204V mutation
+T18.sandy	KeyEntity 1033 1060	improper AQP2 translocation
+T20.sandy	KeyEntity 1088 1118	nephrogenic diabetes insipidus
+T21.sandy	KeyEntity 1215 1225	AQP2-F204V
+T28.sandy	KeyEntity 1464 1467	NDI
+T2.sandy	KeyEntity 0 18	Diabetes Insipidus
+T4.sandy	Entity 163 169	kidney
+T5.sandy	Entity 173 190	concentrate urine
+T16.sandy	KeyEntity 741 744	NDI
+T19.sandy	Entity 1068 1084	molecular defect
+T22.sandy	Entity 1246 1267	endoplasmic reticulum
+T23.sandy	Entity 1282 1303	abnormal localization
+T24.sandy	Entity 1322 1339	wild-type protein
+T25.sandy	Entity 1383 1402	mechanistic studies
+T26.sandy	Entity 1425 1440;1450 1459	pharmacological therapies
+T27.sandy	Entity 1445 1459	gene therapies
+T29.sandy	Entity 1352 1363	mouse model
+T8.sandy	KeyEntity 46 57	Aquaporin-2
+T12.kevin	KeyEntity 685 694	Aqp2 gene
+T13.kevin	Entity 724 737	murine models
+T14.kevin	Entity 862 878	renal cell lines
+T15.kevin	KeyEntity 887 911	recessive Aqp2 mutations
+T21.kevin	Entity 22 26	Mice
+
+
+
+
+
+
+R13.sandy	participates_in Arg1:T18.sandy Arg2:T20.sandy	
+R3.sandy	interacts_with Arg1:T4.sandy Arg2:T5.sandy	
+R4.sandy	interacts_with Arg1:T4.sandy Arg2:T6.sandy	
+R9.sandy	is_part_of Arg1:T14.sandy Arg2:T12.sandy	
+R12.sandy	is_subclass_of Arg1:T18.sandy Arg2:T19.sandy	
+R14.sandy	interacts_with Arg1:T21.sandy Arg2:T22.sandy	
+R1.kevin	VERIFY_is_subtype_of Arg1:T1.kevin Arg2:T2.kevin	
+R7.kevin	is_part_of Arg1:T14.sandy Arg2:T12.kevin	
+R8.kevin	is_part_of Arg1:T12.kevin Arg2:T12.sandy	
+T1	Entity 34 42	Mutation
+R1	is_part_of Arg1:T1 Arg2:T8.sandy	
+T3	Entity 356 415	vasopressin-sensitive water channel aquaporin-2 (Aqp2) gene
+R2	participates_in Arg1:T3 Arg2:T7.sandy	
+T4	Entity 313 348	vasopressin receptor 2 (Avpr2) gene
+R3	participates_in Arg1:T4 Arg2:T7.sandy	
+T5	KeyEntity 70 117	Congenital nephrogenic diabetes insipidus (NDI)
+R4	interacts_with Arg1:T6.sandy Arg2:T5	
+
