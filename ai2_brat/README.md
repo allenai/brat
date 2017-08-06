@@ -25,6 +25,23 @@ usage: fixup_annotations.py [-h] [--outputPath OUTPUTPATH] paths [paths ...]
 python3 ai2_brat/fixup_annotations.py --outputPath fixed derandomized/kevin
 ```
 
+## Measure Agreement
+
+It might be useful to measure the inter-annotator agreement.
+
+``` shell
+usage: measure_agreement.py [-h] [--relaxed] [--considerDiscontinuous]
+                            [--entityTypes [ENTITYTYPES [ENTITYTYPES ...]]]
+                            [--relationTypes [RELATIONTYPES [RELATIONTYPES ...]]]
+                            paths [paths ...]
+
+# In the the brat repo
+python3 ai2_brat/measure_agreement.py data/craft/{kevin, sandy}
+```
+
+There are a number of options to choose among. `--relaxed` is perhaps the most
+common to use.
+
 ## Automatic merge
 
 Merge multiple annotations to be adjudicated.
@@ -63,16 +80,3 @@ usage: merge_annotations.py verify [-h] [--verbose] correction_dir
 
 python3 ai2_brat/merge_annotations.py verify corrections
 ```
-
-
-## Conversion to CoNLL format
-
-Convert the brat annotations to the data format used elsewhere in the project.
-
-``` shell
-usage: brat_conversion.py [-h] inputPaths [inputPaths ...] outputPath
-
-# In scholar-research/base
-python3 base/brat_conversion.py path/to/brat/data/craft/corrections annotations.conll
-```
-
