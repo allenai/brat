@@ -1,4 +1,3 @@
 spacy
 numpy
 scipy
-https://github.com/explosion/spacy-models/releases/download/en_core_web_md-1.2.1/en_core_web_md-1.2.1.tar.gz
