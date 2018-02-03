@@ -65,7 +65,6 @@ class EnhancedAnnotatedDoc:
     def _init_nlp():
         if EnhancedAnnotatedDoc.NLP is None:
             EnhancedAnnotatedDoc.NLP = en_core_web_md.load()
-            EnhancedAnnotatedDoc.NLP.add_pipe(nlp.create_pipe('sentencizer'))
 
     def write_to_path(self, path):
         """Write .txt and .ann files representing the underlying brat annotation.
